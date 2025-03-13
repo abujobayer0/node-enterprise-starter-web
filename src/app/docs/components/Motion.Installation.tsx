@@ -80,15 +80,22 @@ const MotionInstallation = ({
                 <span className="text-indigo-400">3.</span> Wait for the setup
                 to complete
               </p>
+              <p>
+                <span className="text-indigo-400">4.</span> cd
+                node-enterprise-starter
+              </p>
+              <p>
+                <span className="text-indigo-400">5.</span>{" "}
+                {activeManager === "npx"
+                  ? "npm"
+                  : activeManager === "bunx"
+                  ? "bun"
+                  : activeManager}{" "}
+                run dev
+              </p>
             </div>
           </div>
         </div>
-
-        <CommandLineCard
-          activeManager="npm"
-          copyCommand={copyCommand}
-          copied={copied}
-        />
       </motion.div>
 
       <motion.div
