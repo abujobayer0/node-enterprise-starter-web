@@ -1,19 +1,17 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, MotionProps } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
 
-interface BadgeInterface {
+interface BadgeProps extends MotionProps {
   text: string;
-  initial?: any;
-  animate?: any;
-  transition?: any;
 }
-const MotionBadge = ({
+
+const MotionBadge: React.FC<BadgeProps> = ({
   text,
   initial,
   animate,
   transition,
-}: BadgeInterface) => {
+}) => {
   return (
     <motion.div
       initial={initial}

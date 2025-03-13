@@ -22,7 +22,7 @@ const DocPage = () => {
   }, []);
 
   const copyCommand = () => {
-    const commands: any = {
+    const commands: Record<string, string> = {
       npx: "npx node-enterprise-starter",
       yarn: "yarn dlx node-enterprise-starter",
       bunx: "bunx node-enterprise-starter",

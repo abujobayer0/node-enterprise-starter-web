@@ -1,4 +1,4 @@
-import { Rocket, Terminal, Coffee, Copy, Check } from "lucide-react";
+import { Rocket, Terminal, Coffee } from "lucide-react";
 import React from "react";
 import ManagerButton from "./installation/Manager";
 import CommandLineCard from "./installation/Command.Line";
