@@ -2,7 +2,7 @@ import { envConfig } from "@/constants";
 import { FileText, Settings } from "lucide-react";
 import React from "react";
 import SetupInstructions from "./Motion.Setup.Instractions";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 interface Props {
   isVisible: boolean;

@@ -1,6 +1,6 @@
 import { Badge } from "@/components/ui/badge";
 import { navigation } from "@/constants";
-import { Menu, Terminal, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import React from "react";
 import GitStarButton from "./Motion.Github.Button";
 import { Button } from "@/components/ui/button";
