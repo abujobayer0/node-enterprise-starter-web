@@ -42,16 +42,16 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
     shortcut: "/favicon-16x16.png",
   },
-  metadataBase: new URL("https://yourwebsite.com"),
+  metadataBase: new URL("https://node-enterprise-starter-web.vercel.app/"),
   openGraph: {
     title: "Node Enterprise Starter",
     description:
       "Enterprise-grade Node.js boilerplate with TypeScript, Express, and MongoDB.",
-    url: "https://yourwebsite.com",
+    url: "https://node-enterprise-starter-web.vercel.app/",
     siteName: "Node Enterprise Starter",
     images: [
       {
-        url: "https://yourwebsite.com/og-image.png",
+        url: "https://node-enterprise-starter-web.vercel.app/",
         width: 1200,
         height: 630,
         alt: "Node Enterprise Starter",
@@ -60,16 +60,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Node Enterprise Starter",
-    description:
-      "Production-ready Node.js boilerplate with Express, TypeScript, and MongoDB.",
-    creator: "@yourhandle",
-    images: ["https://yourwebsite.com/twitter-image.png"],
-  },
   alternates: {
-    canonical: "https://yourwebsite.com",
+    canonical: "https://node-enterprise-starter-web.vercel.app",
   },
 };
 
@@ -87,9 +79,11 @@ export default function RootLayout({
           name="google-site-verification"
           content="your-google-verification-code"
         />
-        <link rel="canonical" href="https://yourwebsite.com" />
+        <link
+          rel="canonical"
+          href="https://node-enterprise-starter-web.vercel.app"
+        />
 
-        {/* Favicons */}
         <link
           rel="apple-touch-icon"
           sizes="180x180"
