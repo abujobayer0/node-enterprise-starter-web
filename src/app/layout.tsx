@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Fira_Code } from "next/font/google";
 import "./globals.css";
-
+import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
@@ -105,6 +105,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${firaCode.variable} antialiased`}>
         {children}
+        <Analytics />
       </body>
     </html>
   );
